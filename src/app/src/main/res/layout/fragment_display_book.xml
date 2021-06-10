@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/display_book_fl"
+    style="@style/MatchParentLayout"
+    android:background="@color/white"
+    tools:context=".view.fragment.DisplayBook">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        style="@style/MatchParentLayout"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnBookmark"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right"
+            android:background="@drawable/nobookmark1"
+            android:padding="@dimen/_20dp" />
+
+        <ImageView
+            android:id="@+id/imgPdfView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:scaleType="fitCenter"
+            android:contentDescription="@null"/>
+
+        <RelativeLayout
+            android:id="@+id/rlPrevNextButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_disable_style"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text="previous" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_disable_style"
+                android:textColor="@color/white"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/_20dp"
+                android:layout_marginBottom="@dimen/_5dp"
+                android:text="next" />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/audio_btn_ll"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:paddingBottom="@dimen/_10dp"
+        android:visibility="gone"
+        android:weightSum="3">
+
+        <Button
+            android:id="@+id/play_audio"
+            style="@style/AudioPlayerButtonStyle"
+            android:layout_marginRight="@dimen/_20dp"
+            android:layout_marginBottom="@dimen/_5dp"
+            android:text="Pause" />
+
+
+        <Button
+            android:id="@+id/stop_audio"
+            style="@style/AudioPlayerButtonStyle"
+            android:layout_marginRight="@dimen/_20dp"
+            android:text="Stop" />
+
+
+        <Button
+            android:id="@+id/repeat_audio"
+            style="@style/AudioPlayerButtonStyle"
+            android:text="Repeat" />
+
+    </LinearLayout>
+</FrameLayout>

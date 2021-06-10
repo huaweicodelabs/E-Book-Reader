@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LinearVerticalWrapHeightLayout"
+    tools:context=".view.activities.LoginActivity">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/huawei_icon"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        style="@style/TextViewLayout"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/login"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/_10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btnHuaweiSignIn"
+            style="@style/HuaweiButton"
+            android:layout_width="240dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/colorPrimaryDark"
+            android:paddingLeft="15dp"
+            android:text="Sign in with Huawei"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

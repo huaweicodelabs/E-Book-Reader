@@ -1,0 +1,170 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="HuaweiButton">
+        <item name="drawableStartCompat">@color/colorPrimaryDark</item>
+        <item name="android:background">#ffffff</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+
+    <!-- Splash Screen theme. -->
+    <style name="SplashTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_background</item>
+    </style>
+
+
+    <style name="MatchParentLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="HeightWrapLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+
+    <style name="ToolbarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">?attr/actionBarSize</item>
+        <item name="android:background">?attr/colorPrimary</item>
+
+    </style>
+
+    <style name="LinearVerticalLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="LinearVerticalWrapHeightLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+
+    </style>
+
+    <style name="LinearVerticalLayoutForItemRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginBottom">1dp</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:clickable">true</item>
+
+    </style>
+
+    <style name="NavHeaderLinearLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/nav_header_height</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:background">@drawable/side_nav_bar</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingLeft">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingTop">@dimen/activity_vertical_margin</item>
+        <item name="android:paddingRight">@dimen/activity_horizontal_margin</item>
+        <item name="android:paddingBottom">@dimen/activity_vertical_margin</item>
+        <item name="android:theme">@style/ThemeOverlay.AppCompat.Dark</item>
+
+
+    </style>
+
+    <style name="LinearHorizontalLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="TextViewLayout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle"></item>
+    </style>
+
+    <style name="TextViewMatchWidthLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle"></item>
+    </style>
+
+    <style name="TextViewWithWeightLayout">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:layout_marginBottom">5dp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_weight">1</item>
+
+
+    </style>
+
+    <style name="CancelButtonImageViewLayout">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:padding">@dimen/_5dp</item>
+        <item name="android:src">@drawable/ic_baseline_close</item>
+        <item name="android:layout_alignParentRight">true</item>
+    </style>
+
+    <style name="ButtonLayoutStyle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/button_ripple_effect</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="AudioPlayerButtonStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginBottom">3dp</item>
+        <item name="android:background">@drawable/button_ripple_effect</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/_10dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+    <style name="AudioPlayerViewStyle">
+        <item name="android:layout_width">@dimen/_20dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+    </style>
+
+
+    <style name="RadioGroupLayoutStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+
+    </style>
+
+    <style name="RadioButtonLayoutStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+
+</resources>

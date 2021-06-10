@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchParentLayout">
+
+
+    <LinearLayout
+        style="@style/MatchParentLayout"
+        android:layout_margin="10dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30dp">
+
+            <TextView
+                style="@style/TextViewLayout"
+                android:gravity="center_vertical"
+                android:text="@string/select_your_language" />
+
+            <ImageView
+                android:id="@+id/cancle_btn"
+                style="@style/CancelButtonImageViewLayout"
+                android:contentDescription="@string/cancel" />
+
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            style="@style/LinearHorizontalLayout"
+            android:layout_height="40dp"
+            android:weightSum="3">
+
+            <TextView
+                android:id="@+id/hindi_lang_btn"
+                style="@style/TextViewWithWeightLayout"
+                android:background="@drawable/textview_border_style"
+                android:text="@string/hindi" />
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/arabic_lang_btn"
+                style="@style/TextViewWithWeightLayout"
+                android:background="@drawable/textview_border_style"
+                android:text="@string/Chinese" />
+
+            <View
+                android:layout_width="5dp"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/russian_lang_btn"
+                style="@style/TextViewWithWeightLayout"
+                android:background="@drawable/textview_border_style"
+                android:text="@string/russian" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/translated_text_tv"
+            style="@style/TextViewLayout"
+            android:layout_marginTop="5dp"
+            android:text="@string/translates_text" />
+
+    </LinearLayout>
+
+</ScrollView>

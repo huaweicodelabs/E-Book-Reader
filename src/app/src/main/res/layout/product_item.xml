@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/HeightWrapLayout"
+    android:background="@color/white"
+    app:cardCornerRadius="@dimen/_14dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        style="@style/HeightWrapLayout"
+        android:padding="@dimen/_10dp"
+        android:layout_marginLeft="10dp">
+
+
+        <TextView
+            android:id="@+id/product_name"
+            style="@style/TextViewLayout"
+            android:textSize="@dimen/hiad_text_16_sp" />
+
+        <TextView
+            android:id="@+id/price"
+            style="@style/TextViewLayout"
+            android:layout_below="@id/product_name"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/action"
+            style="@style/ButtonLayoutStyle"
+
+            android:layout_alignParentRight="true"
+
+            android:layout_centerVertical="true"
+            android:text="@string/text_buy" />
+
+        <TextView
+            android:id="@+id/product_desc"
+            style="@style/TextViewLayout"
+            android:layout_below="@id/price"
+            android:textSize="14sp" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

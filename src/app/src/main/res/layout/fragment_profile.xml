@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentLayout"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        style="@style/MatchParentLayout"
+        android:padding="20dp">
+
+
+        <TextView
+            android:id="@+id/tv_name"
+            style="@style/TextViewLayout"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_emailid"
+            style="@style/TextViewLayout"
+            android:layout_marginTop="5dp"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/til_age"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_emailid">
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/tiet_age"
+                style="@style/HeightWrapLayout"
+                android:hint="@string/age"
+                android:inputType="number"
+                android:maxLength="3" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/age_tv"
+            style="@style/TextViewLayout"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:text="Sex"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="@+id/til_age"
+            app:layout_constraintTop_toBottomOf="@+id/til_age" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            style="@style/RadioGroupLayoutStyle"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/age_tv"
+            tools:ignore="MissingConstraints">
+
+            <RadioButton
+                android:id="@+id/radio_male"
+                style="@style/RadioButtonLayoutStyle"
+                android:layout_gravity="start"
+                android:checked="true"
+                android:text="@string/male" />
+
+            <RadioButton
+                android:id="@+id/radio_female"
+                style="@style/RadioButtonLayoutStyle"
+                android:layout_gravity="end"
+                android:checked="false"
+                android:text="@string/female" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tv_interests"
+            style="@style/TextViewLayout"
+            android:layout_marginTop="30dp"
+            android:text="@string/interests"
+            app:layout_constraintTop_toBottomOf="@id/rg_gender"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_interests"
+            style="@style/HeightWrapLayout"
+            android:layout_marginTop="30dp"
+            app:layout_constraintStart_toStartOf="@id/tv_interests"
+            app:layout_constraintTop_toBottomOf="@id/tv_interests" />
+
+        <Button
+            android:id="@+id/button_save"
+            style="@style/ButtonLayoutStyle"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="@string/save"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/rv_interests" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

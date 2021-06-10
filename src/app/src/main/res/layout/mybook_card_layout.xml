@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:cardView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="230dp"
+    android:background="@color/white"
+    cardView:cardCornerRadius="10dp"
+    cardView:cardElevation="5dp"
+    cardView:cardUseCompatPadding="true">
+
+    <LinearLayout
+        style="@style/HeightWrapLayout"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/imgCardBookImage"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/book_image"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_baseline_menu_book_24"
+            android:tag="image_tag" />
+
+
+        <TextView
+            android:id="@+id/tvCardBookName"
+            style="@style/TextViewLayout"
+            android:layout_gravity="center"
+            android:text="Book Name"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvCardBookType"
+            style="@style/TextViewLayout"
+            android:layout_gravity="center"
+            android:layout_marginTop="2dp"
+            android:text="Book Type"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

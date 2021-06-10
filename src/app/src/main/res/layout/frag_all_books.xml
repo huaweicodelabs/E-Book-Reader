@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:hwads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_books_fragment_fl"
+    style="@style/MatchParentLayout">
+
+
+    <LinearLayout
+        style="@style/LinearVerticalLayout"
+        android:weightSum="1">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvMyBooks"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".9"
+            android:scrollbars="vertical" />
+
+        <com.huawei.hms.ads.banner.BannerView
+            android:id="@+id/hw_banner_view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".1"
+            hwads:adId="testw6vs28auh3"
+            hwads:bannerSize="BANNER_SIZE_360_57" />
+
+    </LinearLayout>
+
+</FrameLayout>

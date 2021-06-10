@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">E-Book Reader</string>
+    <string name="interests">Interests</string>
+
+    <string name="text_size_app">18sp</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="actionSearch">Search</string>
+    <string name="share">Invite</string>
+    <string name="speak">Speak</string>
+    <string name="darkMode">Night Mode</string>
+
+    <string name="menu_book">My Books</string>
+    <string name="menu_translate">Translate</string>
+    <string name="menu_premium">Membership</string>
+    <string name="menu_logout">Logout</string>
+    <string name="menu_profile">My Profile</string>
+    <string name="menu_invite">Invite</string>
+    <string name="menu_interest">My Interests</string>
+    <string name="menu_browse">Browse Books</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="get_premium">Choose your Membership Plan</string>
+    <string name="premium_title">Buy a membership plan to enjoy adfree service and many more.</string>
+    <string name="hello_blank_fragment">Hello</string>
+
+    <string name="pay_success">Pay Successful</string>
+    <string name="cancel">User Cancelled</string>
+    <string name="pay_fail">Pay failed</string>
+    <string name="age">Age</string>
+    <string name="cancel_pay">Cancel</string>
+    <string name="active_plan">Active</string>
+    <string name="external_error">External error occur.</string>
+    <string name="buy">Buy</string>
+    <string name="save">Save</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="alert">Alert</string>
+    <string name="message_data_saved">Data saved successfully.</string>
+    <string name="resume">Play</string>
+    <string name="pause">Pause</string>
+    <string name="menu_favourite">Favorite Pages</string>
+    <string name="gender">Gender</string>
+    <string name="menu_search">Search</string>
+    <string name="text_buy">GET</string>
+    <string name="login">LOGIN</string>
+    <string name="back">back</string>
+    <string name="book_image">Book image</string>
+    <string name="hindi">Hindi</string>
+    <string name="Chinese">Chinese</string>
+    <string name="russian">Russian</string>
+    <string name="select_your_language">Select your language</string>
+    <string name="translates_text">Translates text</string>
+    <string name="profile">Profile</string>
+    <string name="unavailable_in_country">This is unavailable in your country/region.</string>
+    <string name="login_cancelled">Login cancelled by user.</string>
+    <string name="exit_app">Are you sure to exit?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="user_not_logged_in">User is not logged in.</string>
+    <string name="error">Error.</string>
+    <string name="bookmark_success">Bookmark added successfully.</string>
+    <string name="bookmark_error">An error occurred while saving bookmark.</string>
+    <string name="bookmark_deleted">Bookmark deleted successfully.</string>
+    <string name="bookmark_delete_error">An error occurred while deleting bookmark.</string>
+    <string name="error_in_file">Error in getting the file</string>
+    <string name="update">Subscribe</string>
+    <string name="no_internet">No Internet connection!</string>
+</resources>

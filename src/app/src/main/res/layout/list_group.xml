@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/MatchParentLayout">
+
+    <TextView
+        android:id="@+id/bookmarkListGroup"
+        style="@style/TextViewLayout"
+        android:paddingLeft="?android:attr/expandableListPreferredItemPaddingLeft"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp" />
+</LinearLayout>

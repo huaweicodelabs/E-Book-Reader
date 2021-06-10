@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/MatchParentLayout"
+    android:background="@color/white"
+    android:padding="20dp">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_interests"
+        style="@style/HeightWrapLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button_save"
+        style="@style/ButtonLayoutStyle"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:paddingStart="@dimen/_30dp"
+        android:paddingEnd="@dimen/_30dp"
+        android:text="@string/update"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

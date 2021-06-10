@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/NavHeaderLinearLayout">
+
+    <ImageView
+        android:id="@+id/imgUserProfile"
+        android:layout_width="@dimen/_70dp"
+        android:layout_height="@dimen/_70dp"
+        android:contentDescription="@string/nav_header_desc"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:tint="@color/white"
+        app:srcCompat="@drawable/ic_baseline_menu_book_24"
+        tools:ignore="UseAppTint,VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/tvUserName"
+        style="@style/TextViewLayout"
+        android:paddingTop="@dimen/nav_header_vertical_spacing"
+        android:text=""
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/tvUserEmail"
+        style="@style/TextViewLayout"
+        android:text=""
+        android:textColor="@color/white" />
+</LinearLayout>

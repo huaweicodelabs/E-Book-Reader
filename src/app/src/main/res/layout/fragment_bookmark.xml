@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bookmark_fragment_fl"
+    style="@style/MatchParentLayout"
+    tools:context=".view.fragment.BookmarkFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ExpandableListView
+        android:id="@+id/exlvBookmarks"
+        android:visibility="gone"
+        style="@style/MatchParentLayout"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="0.5dp"
+        android:indicatorLeft="?android:attr/expandableListPreferredItemIndicatorLeft" />
+<TextView
+    android:id="@+id/tvNoBookmark"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    style="@style/TextAppearance.AppCompat.Headline"
+    android:text="You do not have any bookmarks."/>
+
+</FrameLayout>
