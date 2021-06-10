@@ -21,9 +21,9 @@ E-Book reader enables users to browse, buy, download and read e-books. The appli
     HMS Core (APK) 4.0.0 or later has been installed on Huawei Android phones.
 	
 ## Configuration 
-    Create an app in AppGallery Connect and obtain the project configuration file agconnect-services.json. In Android Studio, switch to the Project view and move the agconnect-services.json file to the root directory of the app.
-
-Change the value of applicationId in the build.gradle file of the app to the name of the app package applied for in the preceding step.
+    Create an app in AppGallery Connect and obtain the project configuration file agconnect-services.json. 
+    In Android Studio, switch to the Project view and move the agconnect-services.json file to the root directory of the app.
+    Change the value of applicationId in the build.gradle file of the app to the name of the app package applied for in the preceding step.
 	
 ## Sample Code
     The E-Book reader program integrates the Huawei ML kit,HMS Core Ads SDK, Huawei Auth UI SDK, Push kit, IAP and app linking.
